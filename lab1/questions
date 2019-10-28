@@ -1,0 +1,19 @@
+To compare two files (note -b binary operator changes metric):
+> python compare.py -s -b stop_list.txt NEWS/news01.txt NEWS/news02.txt
+To compare all files:
+> python compare.py -s stop_list.txt NEWS/news??.txt
+Adding the '-b' binary option switches to the count-sensitive Jaccard
+metric, otherwise, a count-insensitive version will be used.
+
+After running all the files, it appears that the two identical files
+are news02.txt and news08.txt as they have a similarity score of 1.
+
+The similarity scores for (news04.txt, news07.txt) and 
+(news06.txt, news07.txt) are both around 0.5, so it appears that
+news07.txt has been created by plagiarising sections of news04.txt
+and news06.txt.
+
+Finally, it appears that news01.txt, news05.txt and news09.txt
+all address the same topic as they have similarity scores with 
+one another of around 0.2-0.35. These articles in actuality all
+address the health of Manchester United player George Best.
