@@ -1,0 +1,13 @@
+6.
+a) 	- The most common POS tag is NNP with 6934 occurences.
+	- Tagging every word as NNP would result in an accuracy of 20.7%.
+
+b)	- 12.8% of terms in the lexicon are ambiguous (i.e. have >1 POS tag).
+	- 50.9% of the total tokens in the text are unambiguous.
+
+8.	- A naiive method which tags each word as the most common POS tag it had
+	  in the training set, returns an accuracy of 94.7% on the training data.
+
+9.	- On the test data, the naiive method still performed reasonably well given
+	  it's simplicity, returning an accuracy of 88.6%.
+
