@@ -1,0 +1,8 @@
+1.	Attempting to capture HTML tags using '<.*>' will not work due to greedy matching.
+	This means that the regex will always try to match the longest substring possible;
+	for example if we used that regex with '<p><b>Hi</b></p>, it would return a match
+	for the entire thing, as the whole line is bounded by < and >.
+
+	However, we can impose non-greedy matching by using a '?', to match the shortest
+	possible strings, so our regex is now '<.*?>'. Now, if we took the same line of text,
+	the regex would return <p>, <b>, </b> and </p> all separately.
