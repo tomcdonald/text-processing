@@ -1,0 +1,8 @@
+(base) tommcdonald@tommcdonald-X555LAB:~/text-processing/lab5$ python chinese_segmentation.py -d chinesetrad_wordlist.utf8 -i chinesetext.utf8 -o myresults.utf8
+(base) tommcdonald@tommcdonald-X555LAB:~/text-processing/lab5$ python eval_chinese_segmentation.py chinesetext_goldstandard.utf8 myresults.utf8 
+
+Total correct words: 88573
+Total gold-std words: 91627
+Word-level accuracy: 96.67%
+Sentence-level accuracy: 85.38%
+
